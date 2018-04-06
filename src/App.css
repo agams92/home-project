@@ -1,0 +1,158 @@
+
+@media only screen and (min-width: 700px) {
+  html, body {
+    margin: 3px;
+    padding: 0px;
+    width: 100%;
+    background: #eaeced;
+    min-width: 1280px;
+  }
+  
+  .page {
+    width: 100%;
+    height: 400px;
+    background: green;
+  }
+  
+  .main {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+  }
+  
+  .third {
+    width: 33.3%;
+    padding: 10px;
+  }
+  
+  .citybuttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .citybutton {
+    margin-left: 5px;
+    margin-bottom: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    border: 1px solid #cecece;
+    background: #eaeced;
+    font-size: 18px;
+    flex: 1;
+    transition: 0.7s;
+    outline: none;
+  }
+  
+  .citybutton:hover {
+    background: #fff;
+    border: 1px solid #fff;
+  }
+  
+  .weatherText {
+    text-align: center;
+  }
+
+  .image {
+    position: relative;
+  }
+
+  .image::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 8%;
+    left: -10px;
+    height: 83%;
+    border: 0.5px solid rgb(112, 110, 110);
+  }
+
+  .image::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 8%;
+    right: -10px;
+    height: 83%;
+    border: 0.5px solid rgb(112, 110, 110);
+  }
+
+  .image img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .todoHeader {
+    text-align: center;
+  }
+
+  .todoField {
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    width: 40%;
+  }
+
+  .todoButton {
+    font-size: 20px;
+    border: none;
+    background: #eaeced;
+    border-radius: 50%;
+    transition: 1s;
+    margin-left: 10px
+  }
+
+  .todoButton:hover {
+    background: #40c477;
+    cursor: pointer;
+  }
+
+  .todoItem {
+    display: flex;
+    position: relative;
+    width: 80%;
+    font-size: 20px;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+  }
+
+  .todoItem:after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 70%;
+    bottom: -1px;
+    left: 50px;
+    border: 0.5px solid rgb(112, 110, 110);
+  }
+
+  .todoItem:hover {
+    background: rgb(216, 216, 216);
+    cursor: pointer;
+  }
+
+  .todoItem p {
+    width: 80%;
+    margin: 10px 0px 10px 0px;
+    padding-left: 5px;
+    z-index: 100;
+  }
+
+  .todoDelete {
+    flex-basis: 10%;
+    font-size: 30px;
+    transition: 0.5s;
+  }
+
+  .todoDelete:hover {
+    color: red;
+    cursor: pointer;
+  }
+
+  
+}
